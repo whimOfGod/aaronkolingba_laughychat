@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Emoji:wght@300&display=swap');
+
+.header-content {
+    height: 85vh ;
+    width: auto;
+    background-image: linear-gradient(to right top, #452da2, #412c93, #3d2a85, #392977, #352769, #35266a, #34256b, #34246c, #37247c, #3a238c, #3e229c, #4120ac);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content h1 {
+    color: aliceblue ;
+    padding-top: 1rem;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 5vw;
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #3e229c;
+}
+
+p {
+    max-width: fit-content;
+}
+
+.input-group  {
+    width: 30vw ;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+.container {    
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    /*background-color: rgba(38, 38, 38, 0.038);*/
+    width: 100vw;
+   
+}
+
+.card-info {
+    text-align: center;
+    overflow: hidden;
+    width: 350px;
+    padding: 2%;
+}
+
+.card-info h2 {
+    max-width: 300px;
+    text-align: center;
+}
+
+.card-info:hover {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27); 
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27);
+}
+
+.fa-solid, .fas {
+    font-weight: 10vw;
+    font-size: xx-large;
+}
+
+.card-info .fa-solid:hover {
+    color: #7c5ed6;
+}
+
+.btn-connexion {
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27); 
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27);
+    width: 300px;
+    margin-top: 15px;
+    background-color: #7c5ed6;
+}
+
+li .btn-connexion {
+    text-decoration: none;
+    color: #ffffff;
+    height: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (max-width:891) {
+    .header-content h1 {
+        color: aliceblue ;
+        padding-top: 1rem;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 400;
+        font-size: 10vw;
+    }
+}
+
+@media screen and (max-width: 792px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  
+    .container-top {
+      visibility: hidden;
+    }
+  
+    .footer-content a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 5px;
+  }
+      }
