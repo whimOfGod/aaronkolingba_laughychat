@@ -8,127 +8,52 @@ html {
 body {
     margin: 0;
     padding: 0;
+    
 }
 
-h2 {
-    font-family: 'Fredoka One', cursive;
-    color: #66238a;
-}
-
-header{
-    height: 25vh ;
+.header-content {
+    background-image: url("./image/ash-edmonds-PfiCEBmKTqY-unsplash.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55vh ;
     width: auto;
-    background-color: #22519f;
-    background-image: linear-gradient(45deg, #22519f 0%, #66238a 100%);
-    text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
-} 
+    flex-direction: column;
+    align-items: center;
+    
+}
 
-.headerTitle{
+.header-content h1 {
     color: aliceblue ;
     padding-top: 1rem;
     font-family: 'Fredoka One', cursive;
     font-weight: 400;
-    font-size: 800;
+    font-size: 5vw;
 }
 
-.myNavbar {
-    list-style-type: none;
-    margin: 0 0 15px 0;
-    padding: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between !important;
-    height: 6vh;
-    align-items: center;
-    -webkit-box-shadow: 0px 5px 14px -6px rgba(0,0,0,0.3); 
-    box-shadow: 0px 5px 14px -6px rgba(0,0,0,0.3);
-
-
-}
-
-img {
-    object-fit: cover;
+h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #3e229c;
 }
 
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
+    max-width: fit-content;
 }
 
-.container-top{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.input-group  {
+    width: 30vw ;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
-.container-top img {
-    width: 80%;
-    height: 25vh;
-    object-fit: cover;
-}
-
-.image-card {
-    height: 30vw;
-    width: 30vw;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-}
-
-.image-card img {
-    border-radius: 10px;
-}
-
-
-.image-card h3 {
-    color: #66238a;
-    font-family: 'Fredoka One', cursive;
-    padding-top: 2%;
-}
-
-
-#demo {
-    margin: 20px;
-}
-
-.myNavbar li{
-    list-style: none;
-}
-.myNavbar li a{
-    text-decoration: none;
-    color: #22519f;
-    font-size: smaller;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.myNavbar li a:hover{
-    color: #2e2d5c;
-}
-
-.btn-connexion {
-    border-radius: 20px;
-    padding: 5px;
-    text-align: center;
-    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27); 
-    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27);
-    width: 300px;
-}
-
-.btn-connexion:hover{
-    background-color: #825DB8;
-    color: aliceblue !important;
-}
 
 .container {    
     margin-top: 5px;
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
-    /*background-color: rgba(38, 38, 38, 0.038);*/
     width: 100vw;
    
 }
@@ -138,6 +63,7 @@ p {
     overflow: hidden;
     width: 350px;
     padding: 2%;
+    margin-bottom: 10vh;
 }
 
 .card-info h2 {
@@ -159,90 +85,69 @@ p {
 .card-info .fa-solid:hover {
     color: #7c5ed6;
 }
-.card-info .fa-solid:hover {
-    color: #7c5ed6;
-}
-.formulair-titre {
-    text-align: center;
 
-}
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-    width: 100%;
-    background-color: #5758AE;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  #mon-formulaire {
-    display: flex !important;
-    justify-content: center !important;
-    border-radius: 5px;
-    background-color: rgba(38, 38, 38, 0.038);
-    padding: 20px;
-    margin-top: 3%;
-  }
-
-  form {
-    width: 500px;
-    border:2px #f2f2f2 solid;
-    border-radius: 15px;
+.btn-connexion {
+    border-radius: 20px;
     padding: 10px;
-    background-color: #ffffff;
-  }
-
-
-  @media screen and (max-width: 1200px) {
-      .container-top {
-            visibility: hidden;
-          }
-      }
-
-  @media screen and (max-width: 792px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .container-top {
-    visibility: hidden;
-  }
-
-  .footer-content a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 5px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27); 
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27);
+    width: 400px;
+    margin-top: 20px;
+    background-color: #3e229c;
 }
-    }
 
+.btn-connexion:hover {
+    background-color: #ffffff;
+    color: #3e229c;
+}
+
+li .btn-connexion {
+    text-decoration: none;
+    color: #ffffff;
+    height: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.main-card-image-info {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin-bottom: 20vh;
+    padding: 15px;
+    background-color: #f6f6f6;
+}
+
+.main-card-image-info img{
+    object-fit: cover;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.left-card-img {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-card-image-info p {
+    max-width: fit-content;
+    width: 20%;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.right-card-img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
 
 footer{
+    margin-top: 20px;
     height: 40vh;
     width: auto;
     background-image: linear-gradient(to bottom, #2a3f5f, #293a5f, #2b345e, #2e2d5c, #332659);  
@@ -282,3 +187,49 @@ footer{
 
 
 
+
+
+@media screen and (max-width:891px) {
+    .header-content h1 {
+        color: aliceblue ;
+        padding-top: 1rem;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 400;
+        font-size: 10vw;
+    }
+}
+
+@media screen and (max-width: 808px) {
+    .main-card-image-info {
+        visibility: hidden;
+    }
+
+    footer {
+        margin-top: inherit;
+    }
+}
+
+@media screen and (max-width: 792px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container p {
+      overflow: hidden;
+
+    }
+  
+    .container-top {
+      visibility: hidden;
+    }
+  
+    .footer-content a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 5px;
+  }
+      }
