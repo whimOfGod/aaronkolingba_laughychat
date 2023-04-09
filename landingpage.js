@@ -30,7 +30,7 @@ button.addEventListener('click', () => {  //cette oreille dois réagir au click 
            }
          });
      });
-   }, 500)//c'est la valeur de notre setTimeout
+   }, 500) //c'est la valeur de notre setTimeout
 });
 
 /*// tout d'abord on sélectionne les éléments sur lequels on souhaite executer nos animations

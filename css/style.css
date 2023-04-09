@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Emoji:wght@300&display=swap');
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header-content {
+    background-image: url("/image/ash-edmonds-PfiCEBmKTqY-unsplash.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55vh ;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.header-content h1 {
+    color: aliceblue ;
+    padding-top: 1rem;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 5vw;
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive ;
+    color: #3e229c;
+}
+
+p {
+    max-width: fit-content;
+}
+
+.input-group  {
+    width: 30vw ;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+.container {    
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    width: 100vw;
+   
+}
+
+.card-info {
+    text-align: center;
+    overflow: hidden;
+    width: 350px;
+    padding: 2%;
+    margin-bottom: 10vh;
+}
+
+.card-info h2 {
+    max-width: 300px;
+    text-align: center;
+}
+
+.card-info:hover {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27); 
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27);
+}
+
+.fa-solid, .fas {
+    font-weight: 10vw;
+    font-size: xx-large;
+}
+
+.card-info .fa-solid:hover {
+    color: #7c5ed6;
+}
+
+.btn-connexion {
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27); 
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27);
+    width: 400px;
+    margin-top: 20px;
+    background-color: #3e229c;
+}
+
+.btn-connexion:hover {
+    background-color: #ffffff;
+    color: #3e229c;
+}
+
+li .btn-connexion {
+    text-decoration: none;
+    color: #ffffff;
+    height: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.main-card-image-info {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin-bottom: 20vh;
+    padding: 15px;
+    background-color: #f6f6f6;
+}
+
+.main-card-image-info img{
+    object-fit: cover;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.left-card-img {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-card-image-info p {
+    max-width: fit-content;
+    width: 20%;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.right-card-img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer{
+    margin-top: 20px;
+    height: 40vh;
+    width: auto;
+    background-image: linear-gradient(to bottom, #2a3f5f, #293a5f, #2b345e, #2e2d5c, #332659);  
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-content a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+
+
+.footer-content h4{
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content .fa-brands{
+    font-weight: 300;
+    font-size: xx-large;
+    color: #f2f2f2;
+    margin-right: 10px;
+}
+
+.changeMode {
+    transform: rotate(8deg);
+    transition-duration: 1000ms;
+    background-color: #3e229c;
+    color: #f2f2f2;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27); 
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27);
+    border-radius: 15px;
+}
+
+
+.imgBody{
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+}
+
+button {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27); 
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.27);
+    width: 150px;
+    margin-top: 20px;
+    background-color: #3e229c;
+    color: #ffffff;
+}
+
+.buttonController {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+@media screen and (max-width:891px) {
+    .header-content h1 {
+        color: aliceblue ;
+        padding-top: 1rem;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 400;
+        font-size: 10vw;
+    }
+}
+
+@media screen and (max-width: 808px) {
+    .main-card-image-info {
+        visibility: hidden;
+    }
+
+    footer {
+        margin-top: inherit;
+    }
+}
+
+@media screen and (max-width: 792px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container p {
+      overflow: hidden;
+
+    }
+  
+    .container-top {
+      visibility: hidden;
+    }
+  
+    .footer-content a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 5px;
+  }
+      }
